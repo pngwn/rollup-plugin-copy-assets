@@ -1,11 +1,12 @@
 {
-  "name": "rollup-copy-plugin",
+  "name": "rollup-plugin-copy-files",
   "version": "0.1.0",
   "main": "dist/rollup-copy-plugin.cjs.js",
   "module": "dist/rollup-copy-plugin.es.js",
   "jsnext:main": "dist/rollup-plugin-json.es.js",
   "license": "MIT",
-  "repository": "https://github.com/eritikass/rollup-copy-plugin.git",
+  "repository": "https://github.com/pngwn/rollup-plugin-copy-assets",
+  "author": "pngwn <hello@pngwn.io>",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -14,7 +15,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
     "mocha": "^5.1.1",
-    "rollup": "^0.58.2",
+    "rollup": "^1.7",
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-node-resolve": "^3.3.0",
     "source-map-support": "^0.5.5"

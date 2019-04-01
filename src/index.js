@@ -14,7 +14,7 @@ export default function copy(options = {}) {
     })).catch((error) => {
       rd.destroy();
       wr.end();
-      console.log(`copy-error: ${source} > ${target}`);
+      console.warn(`copy-error: ${source} > ${target}`);
       throw error;
     });
   };
@@ -22,7 +22,7 @@ export default function copy(options = {}) {
   let started = false;
   return {
     name: 'copy',
-    ongenerate: () => {
+    generateBundle: () => {
       if (!started) {
         started = true;
         Object.keys(options).forEach(src => copyFile(src, options[src]));
